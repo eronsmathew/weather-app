@@ -1,0 +1,117 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin:0;
+}
+
+.main-container{
+    background:#000222;
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    border:0;
+    justify-content: space-around;
+    height:800px;
+    -webkit-animation-name: erons;
+    -webkit-animation-duration:4s;
+    -webkit-animation-iteration-count:4;
+    -webkit-animation-direction:alternate;
+    animation-name:erons;
+    animation-duration:4s;
+    animation-iteration-count: 4;
+    animation-direction:alternate ;
+
+}
+@-webkit-keyframes erons{
+    from{background:url("../img/globe-895580__340.jpg");
+    background-size:cover;}
+    to{background:url("../img/rainy-day-concept-hand-holding-260nw-1131165857.jpg");
+    background-size:cover;}
+}
+@keyframes erons{
+    from{background:url("../img/globe-895580__340.jpg");
+    background-size:cover;}
+    to{background:url("../img/rainy-day-concept-hand-holding-260nw-1131165857.jpg");
+    background-size:cover;}
+}
+
+
+#section-header{
+    margin-top:12em;
+}
+
+ #section-header h1{
+    font-size: 2.5em;
+    text-shadow: 1px 1px 3px #ddedf4;
+    color:hsl(140, 48%, 94%);  
+    overflow:hidden;
+    white-space:nowrap;
+    margin:0 auto;
+    letter-spacing:.15em;
+    animation: typing 3.5s steps(40, end), 
+               blink-caret .75s step-end infinite;
+ }
+ 
+ /* The typing effect*/
+
+ @keyframes typing{
+     from {width : 0}
+     to {width: 90%}
+ }
+
+ #my-city {
+    border:0;
+    border-radius:5px;
+    background-color: rgb(225, 231, 235);
+    color:hsl(240, 2%, 9%);
+    background-image: url('searchicon.png');
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 8px;
+    width:100%;
+    height:40px;
+    margin-top:4em;
+    outline:none;
+    text-overflow:ellipsis;
+}
+
+#my-city:focus{
+    border-color:#e6e6d1;
+}
+
+button{
+    border:0;
+    border-radius:5px;
+    background-color: #21ce6f;
+    font-weight:bold;
+    text-align:center;
+    height:40px;
+    line-height:20px;
+    color:hsl(0, 0%, 100%);
+    margin-top:12px;
+    margin-left:17em;
+    padding:10px;
+    outline:none;
+}
+
+button:hover{
+    cursor:pointer;
+    background-color:hsla(325, 89%, 52%, 0.916);
+    color:#e4e6ee;
+    font-weight:bold;
+    outline:none;
+
+}
+
+footer{
+    padding:20px;
+    margin-top:20px;
+}
+
+/* Media Queries*/
+
+@media(max-width: 768px){
+    
+}
